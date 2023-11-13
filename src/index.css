@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  overflow-x: hidden;
+}
+header {
+    background-image: url('https://img.freepik.com/premium-photo/main-course-with-beef-steak-realistic-3d-product-showcase-food-photography_111797-1843.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 98vh;
+}
+
+.imageAnimations {
+    
+    width: 100%;
+    margin-top: 10px;
+    position: relative;
+    top: -110px;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+}
+.photoOne,.photoTwo {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    padding-top: 6.798%;
+    color: transparent;
+    animation-delay: -60s;
+    -moz-animation: scroll-left 100s linear infinite;
+    -webkit-animation: scroll-left 100s linear infinite;
+    animation: scroll-left 100s linear infinite;
+}
+   
+.photoItem {
+    width: 30%;
+    height: 100px;
+    object-fit: cover;
+    border: 0;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+
+@-moz-keyframes scroll-left {
+    0% {
+      -moz-transform: translateX(100%);
+    }
+    100% {
+      -moz-transform: translateX(-100%);
+    }
+  }
+          
+  @-webkit-keyframes scroll-left {
+    0% {
+      -webkit-transform: translateX(100%);
+    }
+    100% {
+      -webkit-transform: translateX(-100%);
+    }
+  }
+          
+  @keyframes scroll-left {
+    0% {
+      -moz-transform: translateX(100%);
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+      -ms-transform: translateX(100%);
+      -o-transform: translateX(100%);
+}
+    100% {
+      -moz-transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+      -o-transform: translateX(-100%);
+}
+  }
+
+/*Card flip*/
+/* .card {
+  width: 200px;
+  height: 300px;
+  perspective: 1000px;
+  cursor: pointer;
+ 
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+  -webkit-transition: transform 0.6s;
+  -moz-transition: transform 0.6s;
+  -ms-transition: transform 0.6s;
+  -o-transition: transform 0.6s;
+
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+}
+
+.card-face {
+  position: absolute;
+  width: 95%;
+  height: 50%;
+  backface-visibility: hidden;
+}
+
+.card-front {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #c0c0c0;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+} */
+
+
+
+
+
+
+
+
+
+
+
