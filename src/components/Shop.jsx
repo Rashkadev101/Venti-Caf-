@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import {
   FaFacebookF,
   FaInstagram,
+  FaLeaf,
   FaList,
   FaPlus,
   FaThList,
@@ -26,6 +27,11 @@ const Shop = () => {
   const [showdeatilfour, setShowDeatilFour] = useState(false);
   const [showdeatilfive, setShowDeatilFive] = useState(false);
   const [showdeatilsix, setShowDeatilSix] = useState(false);
+
+  //navigation back to the home page
+  const handleLogoClick = () => {
+    window.location.href = '/';
+  };
 
   const handleLoginClick = () => {
     setShowForm(true);
@@ -83,11 +89,14 @@ const Shop = () => {
         <div className='flex justify-between items-center bg-slate-900 pt-5 '>
           {/**left */}
 
-          <div className='flex items-center  pl-14 relative -top-6 '>
-            <h1 className='text-green-800 text-8xl font-black '>v</h1>
-            <h2 className='text-white text-3xl font-bold pt-10 pl-3'>
-              venti{' '}
-              <strong className='text-white text-4xl font-black'>cafe</strong>
+          <div
+            onClick={handleLogoClick}
+            className='flex items-center  pl-14 relative -top-6 '
+          >
+            <h2 className='text-green-800 text-4xl  font-black pt-10 pl-3 cursor-pointer capitalize'>
+              <FaLeaf className='relative top-2' />
+              rashid{' '}
+              <strong className='text-white text-4xl font-medium'>cafe</strong>
             </h2>
           </div>
           {/**center */}

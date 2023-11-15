@@ -4,6 +4,7 @@ import Login from './Login';
 
 import {
   FaBars,
+  FaLeaf,
   FaLocationArrow,
   FaShoppingBag,
   FaStar,
@@ -82,10 +83,12 @@ const Home = () => {
             {/**left */}
 
             <div className='flex items-center  pl-14 relative -top-6 '>
-              <h1 className='text-green-800 text-8xl font-black '>v</h1>
-              <h2 className='text-white text-3xl font-bold pt-10 pl-3'>
-                venti{' '}
-                <strong className='text-white text-4xl font-black'>cafe</strong>
+              <h2 className='text-green-800 text-4xl  font-black pt-10 pl-3 cursor-pointer capitalize'>
+                <FaLeaf className='relative top-2' />
+                rashid{' '}
+                <strong className='text-white text-4xl font-medium'>
+                  cafe
+                </strong>
               </h2>
             </div>
             {/**center */}
@@ -137,7 +140,7 @@ const Home = () => {
                 </div>
                 <button
                   onClick={handleLoginClick}
-                  className='bg-green-800 w-28 h-10 text-slate-100 text-lg capitalize'
+                  className='bg-green-800 w-28 h-10 text-slate-100 text-lg capitalize round'
                 >
                   log in
                 </button>
@@ -160,24 +163,23 @@ const Home = () => {
             </h3>
             <div className='flex flex-wrap items-center space-x-6'>
               <div className='flex my-8'>
-                <div className='bg-green-700 w-12 px-3 py-3 text-white text-lg'>
+                <div className='bg-green-700 w-12 px-3 py-3 text-white text-lg rounded-l-md'>
                   <FaLocationArrow />
                 </div>
                 <input
                   type='text'
                   placeholder='what`s your address?'
-                  className='w-80 h-11 px-12 hover:focus:outline-none'
+                  className='w-[80vh] h-11 px-12 hover:focus:outline-none rounded-r-md'
                 />
-              </div>
-
-              <div>
                 <button
                   onClick={handleDeatilClick}
-                  className='bg-green-700 w-36 h-11 text-white font-semibold cursor-pointer capitalize'
+                  className='bg-green-700 relative  -left-28 top-1 h-9 w-24 text-white text-sm font-semibold cursor-pointer capitalize rounded'
                 >
                   find food
                 </button>
               </div>
+
+              <div></div>
             </div>
             <h4 className='text-white capitalize'>
               not yet menber?
